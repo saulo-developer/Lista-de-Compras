@@ -2,19 +2,12 @@
 
     font-family: 'Inter', sans-serif;
 }
-
-
 .voltar {
-
     font-family: 'Inter', sans-serif;
-}
-
-.voltar:hover {
-    
-
     cursor: pointer;
-   
 }
+
+
 .input-container { 
 
     font-family: 'Inter', sans-serif;
@@ -30,6 +23,7 @@
     background-color: #CA3884;
     border-radius: 6px;
     height: 30px;
+   
 
 }
 
@@ -65,31 +59,48 @@ header {
 main
   {
 
+margin-left: -12rem;
 
-margin-right: 100px;
+
+
 
   }
 
 
+  input::placeholder {
+    text-align: center;
+}
+
+input {
+    text-align: center;
+}
 
   .delete-btn {
-    background-color: #CA3884;
+    background-color: #fff;
 
     cursor: pointer;
     transform: scale(1.05);
     transition: all 0.3s ease;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     border-radius: 6px;
+    
+
+    
+margin-right: 50rem;
+    
+   
 
   }
 
-  .delete-btn:hover {background-color: #e2dbdf;
-
+  .delete-btn:hover{
     cursor: pointer;
+    background-color:  #CA3884;
     transform: scale(1.05);
-    transition: all 0.3s ease;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
   }
+
+
 
 
   input {
@@ -103,8 +114,12 @@ margin-right: 100px;
 
    
     list-style-type: none; /* Remove os marcadores de lista (pontos) */
+    justify-content: space-between; 
+    padding: 0;
     
   }
+
+  
 
 
   a {
@@ -112,9 +127,6 @@ margin-right: 100px;
     color: inherit;
 }
 
-a:hover {
-    color: #A8326E;
-}
 
 .checkbox {
     display: none;
@@ -142,33 +154,41 @@ a:hover {
 .lista-compras {
     list-style-type: none;
     padding: 0;
+ 
 }
 
 .lista-compras li {
     display: flex;
     align-items: center;
+
     margin-bottom: 10px;
+    
 }
 
-.lista-compras .delete-btn {
+
+
+
+.lista-compras  {
     background: none;
     border: none;
     cursor: pointer;
     font-size: 1.2em;
 
-    color: #CA3884;
-}
+    
+   
 
-.lista-compras .delete-btn:hover {
+} 
+
+
+
+/*ista-compras .delete-btn:hover {
 
     
 
     
     color: #A8326E;
 }
-/*delelte-btn {
- align-items: baseline;
-}
+
 
 */
 a {
@@ -176,11 +196,6 @@ a {
     color: inherit;
 }
 
-a:hover {
-    color: #A8326E;
-
-
-}
 
 
 .lista-compras li {
@@ -196,13 +211,13 @@ a:hover {
   
 }
 
-.lista-compras .delete-btn {
+.lista-compras  {
     background: none;
     border: none;
     cursor: pointer;
     font-size: 1.2em;
     margin-left: 100px;
-    color: #CA3884;
+    color: #0a0a0a;
 
-   align-content: center;
+ 
 }
