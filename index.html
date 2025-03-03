@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +7,52 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <title>Lista de Compras</title>
+    <link rel="stylesheet" href="index.css  ">
 </head>
 <body>
-    
+    <header>
+       
+        <h1 class="logo"> 
+
+
+
+            <img  src="./Assets/Icons/Logo.svg" alt="Icon-logo" class="icon"> quicklist </h1>
+
+
+    </header>
+
+    <main>
+        <a href="#" class="voltar">⬅ Voltar</a>
+       <h2>Compras da Semana</h2>
+
+        <div class="input-container">
+            <input type="text" placeholder="Adicione um novo item">
+            <button class="add-btn">Adicionar item</button>
+        </div>
+
+        <ul class="lista-compras">
+           
+            <li>
+                <input type="checkbox">
+                <span class="tipo1">Pão de forma</span>
+                <button class="delete-btn">🗑️</button>
+            </li>
+            <li>
+                <input type="checkbox">
+                <span class="tipo2">Café preto</span>
+                <button class="delete-btn">🗑️</button>
+            </li>
+            <li>
+                <input type="checkbox">
+                <span class="tipo3">Suco de laranja</span>
+                <button class="delete-btn">🗑️</button>
+            </li>
+            <li>
+                <input type="checkbox">
+                <span class="tipo4">Bolacha</span>
+                <button class="delete-btn">🗑️</button>
+            </li>
+        </ul>
+    </main>
 </body>
 </html>
