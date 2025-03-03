@@ -9,13 +9,37 @@
     font-family: 'Inter', sans-serif;
 }
 
+.voltar:hover {
+    
+
+    cursor: pointer;
+   
+}
 .input-container { 
 
     font-family: 'Inter', sans-serif;
+    height: 30px;
+    
+    
+    
+
 }
 
-.add-btn {
+.add-btn{
     font-family: 'Inter', sans-serif;
+    background-color: #CA3884;
+    border-radius: 6px;
+    height: 30px;
+
+}
+
+.add-btn:hover {
+    background-color: #e2dbdf;
+
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .tipo1, .tipo2, .tipo3, .tipo4, .tipo5{
@@ -23,20 +47,69 @@
     font-family: 'Inter', sans-serif;
 }
 
-
+nav {
+    
+    margin-left:700px;
+    
+    margin-top: 10rem;
+}
 
 header {
 
-    margin-top: 10rem;
+    margin-top: 2rem;
 
     margin-bottom: 70px;
 
-    margin-left: 850px;
+    margin-left:700px;
 }
 main
   {
 
 
-margin-left: 850px;
+margin-left: 500px;
 
   }
+
+
+
+  .delete-btn {
+    background-color: #CA3884;
+
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+
+  }
+
+  .delete-btn:hover {background-color: #e2dbdf;
+
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+
+  input {
+    width: 30rem;
+    height: 30px;
+    border-radius: 6px;
+  }
+
+
+  li {
+
+   
+    list-style-type: none; /* Remove os marcadores de lista (pontos) */
+    
+  }
+
+
+  a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit; /* Mantém a cor do texto ao invés da cor padrão do link */
+}
+
+  .checkbox input[type="checkbox"]:checked { background-color: #CA3884; transform: scale(1.05); transition: all 0.3s ease; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); }
