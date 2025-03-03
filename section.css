@@ -129,12 +129,14 @@ a:hover {
     border-radius: 3px;
     transition: all 0.3s ease;
     margin-right: 10px;
+    vertical-align: middle; /* Alinha verticalmente com o texto */
 }
 
 .checkbox:checked + label .custom-checkbox {
     background-color: #CA3884;
     transform: scale(1.05);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 .lista-compras {
@@ -158,9 +160,17 @@ a:hover {
 }
 
 .lista-compras .delete-btn:hover {
+
+    
+
+    
     color: #A8326E;
 }
+/*delelte-btn {
+ align-items: baseline;
+}
 
+*/
 a {
     text-decoration: none;
     color: inherit;
@@ -183,6 +193,7 @@ a:hover {
 
 .lista-compras .checkbox {
     margin-right: 20px; /* Reduz a margem entre o checkbox e o botão */
+  
 }
 
 .lista-compras .delete-btn {
@@ -192,4 +203,6 @@ a:hover {
     font-size: 1.2em;
     margin-left: 100px;
     color: #CA3884;
+
+   align-content: center;
 }
