@@ -6,7 +6,7 @@ const addItem = document.querySelector(".add-btn")
 addItem.addEventListener("click", (e) => {
 e.preventDefault()
 
-console.log("Formulário enviado!")
+alert("Formulário enviado!")
 
 })
 
@@ -23,7 +23,7 @@ document.addEventListener("click", (e) => {
         const item = e.target.closest("li"); // Encontra o elemento pai mais próximo (exemplo: um <li>)
         if (item) {
             item.remove(); // Remove o item da lista
-            console.log("Item removido!");
+            alert("Item removido!")
         }
     }
 });
