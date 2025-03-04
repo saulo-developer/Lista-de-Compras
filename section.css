@@ -170,7 +170,10 @@ label {
 }
 
 
+footer {
 
+    margin-top: 4rem;
+}
 .notification-one {
     display: block;
     background-color: brown;
@@ -178,12 +181,12 @@ label {
     color: #f8f8ff;
     border-radius: 100px;  
 
-    width: 500px;    
-    height: 100px;    
+    width: 300px;    
+    height: 69px;    
     margin: 10px;    
 
     text-align: center;
-    line-height: 90px;
+    line-height: 69px;
 }
 /* Responsividade */
 @media (max-width: 600px) {
