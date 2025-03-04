@@ -72,30 +72,37 @@ header {
 
 .add-btn {
     padding: 10px 15px;
-    background-color: #A000A0;
-    color: white;
+    background-color: #c28bc2;
+   
+    
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease-in-out; /* Suaviza a transição de cor */
 }
 
 .add-btn:hover {
-
-    background-color: #171417;
-    gap: 10px;
-    margin-left: 10px; /* Aumenta o espaço entre o texto e o ícone */
-   
-  
-    cursor: pointer;
-
+    background-color: #b50fb5;
+    transform: scale(1.05); /* Efeito de leve aumento ao passar o mouse */
 }
 
+
+
+
+.delete-btn {
+    margin-left: 10px; /* Aumenta o espaço entre o texto e o ícone */
+
+   
+    cursor: pointer;
+}
 
 .delete-btn:hover {
 
-    background-color: #A000A0;
-    cursor: pointer;
+    background-color:#A000A0;
 }
+
+
+
 
 /* Personalizando o checkbox */
 .checkbox {
@@ -145,7 +152,16 @@ header {
     border-radius: 5px;
     margin-bottom: 10px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    
+}
+
+label {
+    font-size: 18px; /* Aumenta o tamanho do texto */
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espaçamento entre o checkbox e o texto */
+    flex-grow: 1; /* Faz a label ocupar o espaço disponível */
 }
 
 .tipo5 {
@@ -153,16 +169,7 @@ header {
     margin-bottom: 2rem;
 }
 
-label {
-    font-size: 18px; /* Aumenta o tamanho do texto */
-    font-weight: bold; /* Deixa o texto mais destacado */
-    cursor: pointer; /* Facilita o clique */
-    display: flex;
-   
-    gap: 10px; /* Espaçamento entre o checkbox e o texto */
 
-    
-}
 
 
 
