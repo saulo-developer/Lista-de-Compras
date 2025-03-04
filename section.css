@@ -171,9 +171,20 @@ label {
 
 
 
+.notification-one {
+    display: block;
+    background-color: brown;
+    font-family: "Inter", sans-serif;
+    color: #f8f8ff;
+    border-radius: 100px;  
 
+    width: 500px;    
+    height: 100px;    
+    margin: 10px;    
 
-
+    text-align: center;
+    line-height: 90px;
+}
 /* Responsividade */
 @media (max-width: 600px) {
     .input-container {
