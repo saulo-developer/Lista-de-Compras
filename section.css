@@ -82,6 +82,11 @@ header {
 .add-btn:hover {
 
     background-color: #171417;
+    gap: 10px;
+    margin-left: 10px; /* Aumenta o espaço entre o texto e o ícone */
+   
+  
+    cursor: pointer;
 
 }
 
@@ -140,12 +145,28 @@ header {
     border-radius: 5px;
     margin-bottom: 10px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    
 }
 
 .tipo5 {
 
     margin-bottom: 2rem;
 }
+
+label {
+    font-size: 18px; /* Aumenta o tamanho do texto */
+    font-weight: bold; /* Deixa o texto mais destacado */
+    cursor: pointer; /* Facilita o clique */
+    display: flex;
+   
+    gap: 10px; /* Espaçamento entre o checkbox e o texto */
+
+    
+}
+
+
+
+
 /* Responsividade */
 @media (max-width: 600px) {
     .input-container {
