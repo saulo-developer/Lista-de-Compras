@@ -1,50 +1,47 @@
 const removeItems = document.querySelectorAll(".delete-btn");
-let firstNotification = true;
+const addItems = document.querySelector(".add-btn")
+let deletedCount = 0; 
 
-removeItems.forEach(removeItem => {
-    removeItem.addEventListener("click", (e) => {
-        e.preventDefault();
-        
-        // Get the parent list item
-        const listItem = removeItem.parentElement;
-        
-        // Remove the list item
-        listItem.remove();
-        
-        if (firstNotification === true) {
-            // Show notification
-            const notification = document.querySelector("#notification");
-            notification.style.display = 'block';
-            
-            // Hide notification after 3 seconds
-            setTimeout(() => {
-                notification.style.display = 'none';
-                firstNotification = false;
-            }, 3000);
-        }
-    });
+// Adding items in the list
+addItems.addEventListener("click", (e) => {
+    e.preventDefault();
+    
+    const content = document.getElementById("campo-1").value.trim(); // Obtém o valor do input
+
+    if (content) {
+        alert("Item adicionado: " + content);
+    } else {
+        alert("Por favor, insira um item antes de adicionar!");
+    }
 });
 
 
-/*
-function addItem() {
-    // Get input and list elements
-    const input = document.getElementById('new-item');
-    const list = document.getElementById('shopping-list');
-    
-    // Check if input is not empty
-    if (input.value.trim() !== '') {
-        // Create new list item
-        const newItem = document.createElement('li');
-        newItem.innerHTML = `${input.value} <button class="remove-btn" onclick="removeItem(this)">🗑️</button>`;
+// Removing items from the list, including notification which pops up when delete button is clicked
+let deletedCount = 0; // Definindo a variável de contagem
+
+document.addEventListener("click", (e) => {
+    if (e.target.classList.contains("delete-btn")) {
+        e.preventDefault();
+
+        const listItem = e.target.parentElement;
+        listItem.remove();
         
-        // Add to list
-        list.appendChild(newItem);
-        
-        // Clear input
-        input.value = '';
+        // Obtém a notificação
+        let notification = document.getElementById("notification");
+
+        // Atualiza o texto da notificação
+        notification.textContent = `Item deletado. Total deletado: ${++deletedCount}`;
+
+        // Exibe a notificação
+        notification.style.display = "block";
+
+        // Oculta a notificação após 3 segundos
+        setTimeout(() => {
+            notification.style.display = "none";
+        }, 3000);
+    } else {
+        // Oculta a notificação se não for clicado em um botão de deletação
+        let notification = document.getElementById("notification");
+        notification.style.display = "none";
     }
-}
-
-
-*/
+});

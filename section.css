@@ -12,7 +12,8 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-color: #f8f8f8;
+    background-color:  #D1D5DB;
+
     padding: 20px;
 }
 
@@ -68,6 +69,7 @@ header {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    
 }
 
 .add-btn {
@@ -169,12 +171,11 @@ label {
     margin-bottom: 2rem;
 }
 
-
 footer {
 
     margin-top: 4rem;
 }
-.notification-one {
+/*.notification-one {
     display: block;
     background-color: brown;
     font-family: "Inter", sans-serif;
@@ -187,6 +188,24 @@ footer {
 
     text-align: center;
     line-height: 69px;
+}*/
+
+#notification {
+
+
+    display: block;
+    background-color: brown;
+    font-family: "Inter", sans-serif;
+    color: #f8f8ff;
+    border-radius: 100px;  
+
+    width: 300px;    
+    height: 69px;    
+    margin: 10px;    
+
+    text-align: center;
+    line-height: 69px;
+
 }
 /* Responsividade */
 @media (max-width: 600px) {

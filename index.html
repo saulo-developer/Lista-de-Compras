@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <title>Lista de Compras</title>
-    <link rel="stylesheet" href="index.css  ">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <nav>
@@ -25,10 +25,11 @@
         <a href="#" class="voltar">⬅ Voltar</a>
      <h2 class="tipo5">Compras da Semana </h2>
 
-        <div class="input-container">
-            <input type="text" placeholder="Adicione um novo item">
-            <button class="add-btn">Adicionar item</button>
-        </div>
+     <div class="input-container">
+        <input type="text" id="campo-1" placeholder="Adicione um novo item">
+        <button class="add-btn">Adicionar item</button>
+    </div>
+    
     </header>
 
     <main>
@@ -57,7 +58,7 @@
     </main>
 
     <footer>
-        <div id="notification" class="notification-one">O item foi removido da lista</div>
+        <div id="notification"></div>
     </footer>
     <script src="script.js"></script>
 </body>
