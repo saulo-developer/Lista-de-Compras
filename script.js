@@ -17,8 +17,6 @@ addItems.addEventListener("click", (e) => {
 
 
 // Removing items from the list, including notification which pops up when delete button is clicked
-let deletedCount = 0; // Definindo a variável de contagem
-
 document.addEventListener("click", (e) => {
     if (e.target.classList.contains("delete-btn")) {
         e.preventDefault();
